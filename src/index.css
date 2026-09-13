@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@keyframes fault-pulse {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 0.3; }
+}
+
+.fault-pulse {
+  animation: fault-pulse 1.1s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fault-pulse {
+    animation: none;
+  }
+}
